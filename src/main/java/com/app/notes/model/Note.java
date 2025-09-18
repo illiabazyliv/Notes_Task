@@ -1,5 +1,6 @@
 package com.app.notes.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 import org.apache.catalina.User;
@@ -24,6 +25,7 @@ public class Note {
     private LocalDateTime createdAt;
     @ManyToOne(optional = false)
     @JoinColumn(name = "author_id", nullable = false)
+    @JsonIgnore
     private Author author;
 
     @PrePersist
