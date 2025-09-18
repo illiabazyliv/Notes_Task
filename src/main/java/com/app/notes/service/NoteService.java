@@ -15,10 +15,6 @@ import java.util.stream.Collectors;
 
 @Service
 public class NoteService {
-//    POST /notes — utworzenie nowej notatki
-//    GET /notes — pobranie listy wszystkich notatek
-//    GET /notes/{id} — pobranie notatki po ID
-//    DELETE /notes/{id} — usunięcie notatki po ID
 
 
     private NoteRepository noteRepository;
